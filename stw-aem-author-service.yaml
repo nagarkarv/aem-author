@@ -11,8 +11,8 @@ spec:
   - name: aem-author-port
     port: 80
     protocol: TCP
-#    targetPort: 4502
-    targetPort: 80
+    targetPort: 4502
+#    targetPort: 80
     nodePort: 31000
   selector:
     app: aem-author-deployment
