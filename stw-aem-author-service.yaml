@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    aem-component: author
+    app: aem-author-deployment
+  name: aem-author-deployment
+spec:
+  ports:
+  - name: aem-author-port
+    port: 4502
+    protocol: TCP
+#    targetPort: 4502
+    targetPort: 80
+    nodePort: 32001
+  selector:
+    app: aem-author-deployment
+  type: NodePort
+status:
+  loadBalancer: {}
