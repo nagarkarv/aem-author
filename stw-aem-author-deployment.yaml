@@ -24,7 +24,7 @@ spec:
           - name: aem-author-data
             mountPath: /opt/aem/crx-quickstart 
         ports:
-         - containerPort: 4502
+#         - containerPort: 4502
          - containerPort: 80
         resources: {}
       volumes:
